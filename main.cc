@@ -31,7 +31,6 @@ int main(int argc, char** argv) {
 	int counter = 0;
 	while (buffer >> number) {
 		counter++;
-		// int number = std::stoi(str);
 		if (counter > numbersCount) { // if we don't have space for another one allocate more
 			int* tempNumbers = new int[counter]; // allocate new memory
 			for (int i = 0; i < numbersCount; ++i) { // copy over the values from old array
